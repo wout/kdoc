@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <title>KDoc Kirby Theme | Home</title>
+    <title>KDoc Kirby Theme | Primary Color</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="http://nsteiner.github.io/kdoc/assets/css/main.css">  </head>
   <body>
@@ -22,7 +22,7 @@
   <a class="skip-link visuallyhidden focusable" href="#main">Skip to Main Content</a>
   <nav class="sidebar-nav" role="navigation">
     <ul>
-            <li class="group sidebar-nav-active">
+            <li class="group">
 
                         <a href="http://nsteiner.github.io/kdoc">Home</a>
 
@@ -36,14 +36,14 @@
                 
         
       </li>
-            <li class="group">
+            <li class="group sidebar-nav-active">
 
-                          <button class="expand-subnav" aria-expanded="false" aria-controls="nav-collapsible-use-and-customizations">+</button>
-                <a href="http://nsteiner.github.io/kdoc/use-and-customizations">Use and Customizations</a>
+                  <button class="expand-subnav" aria-expanded="true" aria-controls="nav-collapsible-use-and-customizations">+</button>
+                        <a href="http://nsteiner.github.io/kdoc/use-and-customizations">Use and Customizations</a>
 
-                        <ul class="submenu nav-children" id="nav-collapsible-use-and-customizations" aria-hidden="true">
-        
-                            <li class="">
+                  <ul class="submenu nav-children" id="nav-collapsible-use-and-customizations" aria-hidden="false">
+                
+                            <li class="sidebar-nav-active">
             <a href="http://nsteiner.github.io/kdoc/use-and-customizations/primary-color">Primary Color</a>
           </li>
                     <li class="">
@@ -70,11 +70,8 @@
 </aside>
 
     <section id="main" class="main-content" role="main">
-      <p>Welcome to the KDoc theme for Kirby CMS. This theme is free to use, and is <a href="https://github.com/nsteiner/kdoc">on github here</a>. This site is both information about the theme, as well as a demo of the theme itself.</p>
-<h2>Introduction</h2>
-<p>KDoc is starter theme for building documentation websites using Kirby CMS. It's based on <a href="https://github.com/cfpb/DOCter">DOCter</a> which is used for the same purpose, but based on Jekyll. This version also includes some inspiration from <a href="https://pages.18f.gov/guides-template/">18F's Guides Template</a>, especially for the expanding menu idea.</p>
-<p>It includes a method for generating a totally static (non-php) version of the site, suitable for use in Github Pages, or on pretty much any server.</p>
-<p>It's ready to go out of the box, but also kept simple so it's easy to customize and modify.</p>    </section>
+      <p>Changing the primary color is very simple, just go to <em>/assets/scss/_primary.sccs</em> and on the first line change the value to whatever you need.</p>
+<pre><code>$site_brand_color : #f00;</code></pre>    </section>
 
   </div><!-- /.wrap content -->
 

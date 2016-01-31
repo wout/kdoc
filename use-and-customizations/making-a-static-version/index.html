@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <title>KDoc Kirby Theme | Home</title>
+    <title>KDoc Kirby Theme | Making a static version</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="http://nsteiner.github.io/kdoc/assets/css/main.css">  </head>
   <body>
@@ -22,7 +22,7 @@
   <a class="skip-link visuallyhidden focusable" href="#main">Skip to Main Content</a>
   <nav class="sidebar-nav" role="navigation">
     <ul>
-            <li class="group sidebar-nav-active">
+            <li class="group">
 
                         <a href="http://nsteiner.github.io/kdoc">Home</a>
 
@@ -36,13 +36,13 @@
                 
         
       </li>
-            <li class="group">
+            <li class="group sidebar-nav-active">
 
-                          <button class="expand-subnav" aria-expanded="false" aria-controls="nav-collapsible-use-and-customizations">+</button>
-                <a href="http://nsteiner.github.io/kdoc/use-and-customizations">Use and Customizations</a>
+                  <button class="expand-subnav" aria-expanded="true" aria-controls="nav-collapsible-use-and-customizations">+</button>
+                        <a href="http://nsteiner.github.io/kdoc/use-and-customizations">Use and Customizations</a>
 
-                        <ul class="submenu nav-children" id="nav-collapsible-use-and-customizations" aria-hidden="true">
-        
+                  <ul class="submenu nav-children" id="nav-collapsible-use-and-customizations" aria-hidden="false">
+                
                             <li class="">
             <a href="http://nsteiner.github.io/kdoc/use-and-customizations/primary-color">Primary Color</a>
           </li>
@@ -52,7 +52,7 @@
                     <li class="">
             <a href="http://nsteiner.github.io/kdoc/use-and-customizations/layout-and-other-style">Layout and Other Style</a>
           </li>
-                    <li class="">
+                    <li class="sidebar-nav-active">
             <a href="http://nsteiner.github.io/kdoc/use-and-customizations/making-a-static-version">Making a static version</a>
           </li>
                   </ul>
@@ -70,11 +70,11 @@
 </aside>
 
     <section id="main" class="main-content" role="main">
-      <p>Welcome to the KDoc theme for Kirby CMS. This theme is free to use, and is <a href="https://github.com/nsteiner/kdoc">on github here</a>. This site is both information about the theme, as well as a demo of the theme itself.</p>
-<h2>Introduction</h2>
-<p>KDoc is starter theme for building documentation websites using Kirby CMS. It's based on <a href="https://github.com/cfpb/DOCter">DOCter</a> which is used for the same purpose, but based on Jekyll. This version also includes some inspiration from <a href="https://pages.18f.gov/guides-template/">18F's Guides Template</a>, especially for the expanding menu idea.</p>
-<p>It includes a method for generating a totally static (non-php) version of the site, suitable for use in Github Pages, or on pretty much any server.</p>
-<p>It's ready to go out of the box, but also kept simple so it's easy to customize and modify.</p>    </section>
+      <p>When running this code locally you are using Kirby and PHP. One way to use this is to install the code on a server that supports PHP, which would allow you to log into the panel and make edits as needed over the web. Another way, is to work with the site locally and then generate a static non-php version as needed.  This is possible with a script at the root called <a href="https://gist.github.com/bastianallgeier/5f182b30d4c90152b468">statify.php</a>.</p>
+<p>To use this, open the statify.php page in your code editor and modify the url variable to whatever your destination URL will be. </p>
+<pre><code>$url = 'http://nsteiner.github.io/kdoc';</code></pre>
+<p>Then go to <em>/statify.php</em> in your local site to run the build. The static files will be generated at <em>/static/</em> at the root.</p>
+<p>This is a great way to get your documentation site up on Github's free Pages service. Just open up a branch called <em>gh-pages</em> and put the contents of /static/ in it. You can also just FTP the files to just about any web host, since there's no server-side dependencies.</p>    </section>
 
   </div><!-- /.wrap content -->
 
