@@ -6,11 +6,6 @@
     <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
     <meta name="viewport" content="width=device-width">
     <?php echo css('assets/css/main.css') ?>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-      <?php echo js('assets/js/respond.min.js') ?>
-    <![endif]-->
-
   </head>
   <body>
   <div class="container">
