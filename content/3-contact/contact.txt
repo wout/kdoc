@@ -1,0 +1,10 @@
+Title: Contact
+
+----
+
+Text: 
+
+## Get in touch
+
+- (link: http://natesteiner.com text: Nate's site)
+- Follow Nate on Twitter (twitter: @nsteiner)
