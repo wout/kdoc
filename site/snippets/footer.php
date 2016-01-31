@@ -7,6 +7,7 @@
 </footer>
 
 <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
 <script src="/assets/js/accordion.js"></script>
 <script src="/assets/js/kdoc.js"></script>
 </body>

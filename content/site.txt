@@ -14,7 +14,7 @@ Keywords: Kirby,CMS,file-based
 
 ----
 
-Copyright: (link: http://getkirby.com text: Kirby) is © 2009-(date: Year) and requires a license, but this theme is free to use.
+Copyright: (link: http://getkirby.com text: Kirby) is © 2009-(date: Year) and requires a license, but (link: https://github.com/nsteiner/kdoc text: this theme) is free to use.
 
 ----
 
