@@ -1,9 +1,0 @@
-Title: How to get started
-
-----
-
-Text: 
-
-1. Download or clone this repo
-2. In terminal run  *npm install* to get a small local build setup, this requires (link: https://nodejs.org/ text: Node.js). You only need to do this the first time.
-3. Run  *npm run dev*  which should open up your default browser with the site running!
