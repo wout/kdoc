@@ -12,4 +12,4 @@ KDoc is starter theme for building documentation websites using Kirby CMS. It's 
 
 It includes a method for generating a totally static (non-php) version of the site, suitable for use in Github Pages, or on pretty much any server.
 
-It's ready to go out of the box, but also kept simple so it's easy to customize and modify.
+It's ready to go out of the box with Kirby v2.2.3. The theme is kept simple so it's easy to customize and modify. When you're ready to launch, don't forget to get your (link: https://getkirby.com/buy text: Kirby license).

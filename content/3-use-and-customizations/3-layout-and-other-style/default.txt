@@ -19,3 +19,6 @@ The main.scss file just imports the SCSS files you'll want:
 @import "primary";
 // you could add more file imports to this file
 ```
+
+## Or not
+You can also just ignore all this and use the included rendered CSS file. If you go this route, you won't need to do any SCSS processing.
