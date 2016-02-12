@@ -1,11 +1,6 @@
-$(function() {
 
-  $('.sidebar-nav').each(function() {
-    accordion($(this));
-  });
-
-  $('pre code').each(function(i, block) {
-    hljs.highlightBlock(block);
-  });
-
+Array.prototype.forEach.call(document.querySelectorAll('.sidebar-nav'), function(el, i){
+  accordion(el);
 });
+
+hljs.initHighlightingOnLoad();
