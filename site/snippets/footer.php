@@ -6,9 +6,9 @@
   </div><!--/.wrap -->
 </footer>
 
-<script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
-<?php echo js('assets/js/highlight.pack.js') ?>
-<?php echo js('assets/js/accordion.js') ?>
+
+<?php echo js('assets/js/libs/highlight.pack.js') ?>
+<?php echo js('assets/js/libs/accordion-plain.js') ?>
 <?php echo js('assets/js/kdoc.js') ?>
 </body>
 </html>

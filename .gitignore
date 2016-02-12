@@ -1,5 +1,4 @@
 site/accounts/*
-!site/accounts/.logins
 !site/accounts/index.html
 node_modules
 static
