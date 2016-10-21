@@ -7,18 +7,20 @@ But re-written to avoid requiring jQuery
 function Accordion(el) {
   var self = this;
   this.root = el;
-  var button = el.querySelectorAll('.expand-subnav')[0];
+  let buttons = el.querySelectorAll('.expand-subnav');
 
-  el.addEventListener('click', function(e){
-    if(e.target && e.target.nodeName == "BUTTON") {
-      e.preventDefault();
-      if(button.getAttribute('aria-expanded') === 'true' ) {
-        self.hide(button);
-      } else {
-        self.show(button);
+  for (let btn of buttons){
+    btn.addEventListener('click', function(e){
+      if(e.target && e.target.nodeName == "BUTTON") {
+        e.preventDefault();
+        if(btn.getAttribute('aria-expanded') === 'true' ) {
+          self.hide(btn);
+        } else {
+          self.show(btn);
+        }
       }
-    }
-    });
+      });
+  }
 }
 
 Accordion.prototype.zrfind = function(selector) {
