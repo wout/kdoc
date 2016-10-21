@@ -7,9 +7,9 @@ But re-written to avoid requiring jQuery
 function Accordion(el) {
   var self = this;
   this.root = el;
-  let buttons = el.querySelectorAll('.expand-subnav');
+  var buttons = el.querySelectorAll('.expand-subnav');
 
-  for (let btn of buttons){
+  buttons.forEach(function(btn){
     btn.addEventListener('click', function(e){
       if(e.target && e.target.nodeName == "BUTTON") {
         e.preventDefault();
@@ -20,7 +20,7 @@ function Accordion(el) {
         }
       }
       });
-  }
+  });
 }
 
 Accordion.prototype.zrfind = function(selector) {
