@@ -1,0 +1,12 @@
+Title: Contact
+
+----
+
+Text: 
+
+## Get in touch
+
+Probably the best way to communicate about this theme is through Github issues, PR's etc., but I'm available through other ways too.
+
+- (link: http://natesteiner.com text: Nate's site)
+- Follow Nate on Twitter (twitter: @nsteiner)
