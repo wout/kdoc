@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <title>KDoc Kirby Theme | Contact</title>
+    <title>KDoc Kirby Theme | Layout and Other Style</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://natesteiner.com/kdoc/assets/css/main.css">  </head>
   <body>
@@ -36,20 +36,20 @@
                 
         
       </li>
-            <li class="group">
+            <li class="group sidebar-nav-active">
 
-                          <button class="expand-subnav" aria-expanded="false" aria-controls="nav-collapsible-use-and-customizations">+</button>
-                <a href="https://natesteiner.com/kdoc/use-and-customizations">Use and Customizations</a>
+                  <button class="expand-subnav" aria-expanded="true" aria-controls="nav-collapsible-use-and-customizations">+</button>
+                        <a href="https://natesteiner.com/kdoc/use-and-customizations">Use and Customizations</a>
 
-                        <ul class="submenu nav-children" id="nav-collapsible-use-and-customizations" aria-hidden="true">
-        
+                  <ul class="submenu nav-children" id="nav-collapsible-use-and-customizations" aria-hidden="false">
+                
                             <li class="">
             <a href="https://natesteiner.com/kdoc/use-and-customizations/primary-color">Primary Color</a>
           </li>
                     <li class="">
             <a href="https://natesteiner.com/kdoc/use-and-customizations/code-highlighting-theme">Code Highlighting Theme</a>
           </li>
-                    <li class="">
+                    <li class="sidebar-nav-active">
             <a href="https://natesteiner.com/kdoc/use-and-customizations/layout-and-other-style">Layout and Other Style</a>
           </li>
                     <li class="">
@@ -58,13 +58,13 @@
                   </ul>
         
       </li>
-            <li class="group sidebar-nav-active">
+            <li class="group">
 
-                  <button class="expand-subnav" aria-expanded="true" aria-controls="nav-collapsible-contact">+</button>
-                        <a href="https://natesteiner.com/kdoc/contact">Contact</a>
+                          <button class="expand-subnav" aria-expanded="false" aria-controls="nav-collapsible-contact">+</button>
+                <a href="https://natesteiner.com/kdoc/contact">Contact</a>
 
-                  <ul class="submenu nav-children" id="nav-collapsible-contact" aria-hidden="false">
-                
+                        <ul class="submenu nav-children" id="nav-collapsible-contact" aria-hidden="true">
+        
                             <li class="">
             <a href="https://natesteiner.com/kdoc/contact/testing">Testing</a>
           </li>
@@ -76,12 +76,17 @@
 </aside>
 
     <section id="main" class="main-content" role="main">
-      <h2>Get in touch</h2>
-<p>Probably the best way to communicate about this theme is through Github issues, PR's etc., but I'm available through other ways too.</p>
-<ul>
-<li><a href="http://natesteiner.com">Nate's site</a></li>
-<li>Follow Nate on Twitter <a href="https://twitter.com/nsteiner">@nsteiner</a></li>
-</ul>    </section>
+      <p>This theme is a very simple and standard Kirby 2.0 type theme. It intentionally uses as little as possible, so that there's not a lot to learn on top of <a href="https://getkirby.com/docs/templates">Kirby template customization</a> in general.</p>
+<p>The theme has only one template (default) and three snippets (header, footer, sidebar).</p>
+<h2>Add CSS</h2>
+<p>The included npm local build tool does SCSS processing, which happens to the <em>/assets/scss/main.scss</em> file. You can add more SCSS files and reference them in main.scss. </p>
+<p>The main.scss file just imports the SCSS files you'll want:</p>
+<pre><code>@import "normalize";
+@import "highlightjs/railscasts";
+@import "primary";
+// you could add more file imports to this file</code></pre>
+<h2>Or not</h2>
+<p>You can also just ignore all this and use the included rendered CSS file. If you go this route, you won't need to do any SCSS processing.</p>    </section>
 
   </div><!-- /.wrap content -->
 

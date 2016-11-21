@@ -221,7 +221,7 @@ Navigation
 
 .nav-children {
   display: block;
-  max-height: 400px;
+  max-height: none;
   opacity: 1;
   -webkit-transition: max-height .2s, opacity .2s;
   -moz-transition: max-height .2s, opacity .2s;

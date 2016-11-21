@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <title>KDoc Kirby Theme | Contact</title>
+    <title>KDoc Kirby Theme | How to get started</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://natesteiner.com/kdoc/assets/css/main.css">  </head>
   <body>
@@ -29,7 +29,7 @@
                 
         
       </li>
-            <li class="group">
+            <li class="group sidebar-nav-active">
 
                         <a href="https://natesteiner.com/kdoc/how-to-get-started">How to get started</a>
 
@@ -58,13 +58,13 @@
                   </ul>
         
       </li>
-            <li class="group sidebar-nav-active">
+            <li class="group">
 
-                  <button class="expand-subnav" aria-expanded="true" aria-controls="nav-collapsible-contact">+</button>
-                        <a href="https://natesteiner.com/kdoc/contact">Contact</a>
+                          <button class="expand-subnav" aria-expanded="false" aria-controls="nav-collapsible-contact">+</button>
+                <a href="https://natesteiner.com/kdoc/contact">Contact</a>
 
-                  <ul class="submenu nav-children" id="nav-collapsible-contact" aria-hidden="false">
-                
+                        <ul class="submenu nav-children" id="nav-collapsible-contact" aria-hidden="true">
+        
                             <li class="">
             <a href="https://natesteiner.com/kdoc/contact/testing">Testing</a>
           </li>
@@ -76,12 +76,19 @@
 </aside>
 
     <section id="main" class="main-content" role="main">
-      <h2>Get in touch</h2>
-<p>Probably the best way to communicate about this theme is through Github issues, PR's etc., but I'm available through other ways too.</p>
-<ul>
-<li><a href="http://natesteiner.com">Nate's site</a></li>
-<li>Follow Nate on Twitter <a href="https://twitter.com/nsteiner">@nsteiner</a></li>
-</ul>    </section>
+      <h2>Method 1: Without Node JS</h2>
+<p>Do this if you don't want the overhead of Node JS, and either don't plan on customizing CSS, or have your own tools to process SCSS. </p>
+<ol>
+<li>Download or clone repo into a PHP compatible local host environment (see <a href="https://getkirby.com/docs/installation">Kirby install details</a>)</li>
+<li>There is no step 2.</li>
+</ol>
+<h2>Method 2: With Node JS</h2>
+<p>Do this if you already have <a href="https://nodejs.org/">Node.js</a>. It creates a nice little self-contained environment for development that includes SCSS auto-processing with file watch and local hosting with PHP support. This has only been tested in OS X 10.11.</p>
+<ol>
+<li>Download or clone this repo</li>
+<li>In terminal run  <em>npm install</em> to get a small local build setup, this requires. You only need to do this the first time.</li>
+<li>Run <em>npm run dev</em>  which should open up your default browser with the site running!</li>
+</ol>    </section>
 
   </div><!-- /.wrap content -->
 
