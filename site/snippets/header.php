@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width">
     <?php echo css('assets/css/main.css') ?>
   </head>
-  <body>
-  <div class="container">
-  <header role="banner">
-    <div class="wrap">
-      <h1 class="site-title"><a class="title-link" href="<?php echo url() ?>"><?php echo $site->title()->html() ?></a></h1>
+  <body class="kdoc__page">
+  <div class="kdoc__container">
+  <header role="kdoc__banner">
+    <div class="kdoc__wrap">
+      <h1 class="kdoc__site-title"><a class="kdoc__title-link" href="<?php echo url() ?>"><?php echo $site->title()->html() ?></a></h1>
     </div>
   </header>

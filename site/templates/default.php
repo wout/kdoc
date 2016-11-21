@@ -1,10 +1,10 @@
 
 <?php snippet('header') ?>
-  <div class="wrap content">
+  <div class="kdoc__wrap kdoc__content">
 
     <?php snippet('sidebar') ?>
 
-    <section id="main" class="main-content" role="main">
+    <section id="kdoc__main" class="kdoc__main-content" role="main">
       <?php echo $page->text()->kirbytext() ?>
     </section>
 

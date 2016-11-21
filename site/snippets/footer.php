@@ -1,6 +1,6 @@
 
-<footer role="contentinfo">
-  <div class="wrap">
+<footer role="kdoc__contentinfo">
+  <div class="kdoc__wrap">
     <p>This project is maintained by <a href="<?php echo $site->authorurl()->html() ?>"><?php echo $site->author()->html() ?></a>.</p>
     <?php echo $site->copyright()->kirbytext() ?>
   </div><!--/.wrap -->

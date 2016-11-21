@@ -34,23 +34,26 @@ Typography
 ==================================
 */
 
-body {
+.kdoc__page {
     font-family: "Avenir Next", Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
     line-height: 1.466666667;
 }
 
-h1,
-h3,
-h4,
-h5,
-strong {
-    font-family: "Avenir Next Demi", "Avenir Next", Arial, sans-serif;
-    font-weight: 600;
+/* text styles for classless elements rendered in a text field */
+.kdoc__page {
+  h1,
+  h3,
+  h4,
+  h5,
+  strong {
+      font-family: "Avenir Next Demi", "Avenir Next", Arial, sans-serif;
+      font-weight: 600;
+  }
 }
 
-.site-title {
+.kdoc__page .kdoc__site-title {
     font-size: 1.625em;
     font-family: "Avenir Next", Arial, sans-serif;
     font-weight: normal;
@@ -60,47 +63,48 @@ strong {
     display: inline-block;
 }
 
-h2 {
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.375em;
-    margin: 1.4em 0 0 0;
+.kdoc__page {
+  h2 {
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.375em;
+      margin: 1.4em 0 0 0;
+  }
+
+  h4 {
+      font-size: 1em;
+      text-transform: uppercase;
+  }
+  img {
+    max-width:100%;
+    height:auto;
+  }
 }
 
-h4 {
-    font-size: 1em;
-    text-transform: uppercase;
-}
 
-.page-title {
-    margin-top: .727272727em; /* 16/22 */
-}
-
-img {
-  max-width:100%;
-  height:auto;
-}
 
 /*
 Lists
 --------------------------------
 */
 
-.main-content ul {
+.kdoc__main-content ul {
     padding-left: 1.1em;
 }
 
-.main-content li {
+.kdoc__main-content li {
     margin-bottom: 1em;
 }
 
-li h3,
-li h4 {
-    margin: 0;
-}
+.kdoc__page{
+  li h3,
+  li h4 {
+      margin: 0;
+  }
 
-li p {
-    margin-top: 0;
+  li p {
+      margin-top: 0;
+  }
 }
 
 /*
@@ -108,42 +112,43 @@ Links
 ==================================
 */
 
-a {
-    -webkit-transition: .2s;
-       -moz-transition: .2s;
-            transition: .2s;
+.kdoc__page{
+  a {
+      -webkit-transition: .2s;
+         -moz-transition: .2s;
+              transition: .2s;
+  }
+
+  a,
+  a:link,
+  a:visited {
+      color: $site-brand-color;
+      text-decoration: none;
+  }
+
+  a:hover {
+      color: transparentize($site-brand-color, 0.5);
+      text-decoration: none;
+  }
+
+  a:focus {
+      outline: thin dotted;
+  }
+
+
+  a.skip-link {
+      color: $site-brand-color;
+      padding: .25em;
+  }
+
+  a.skip-link:hover,
+  a.skip-link:active,
+  a.skip-link:focus {
+      background-color: $site-brand-color;
+      color: #fff;
+      border-bottom: none;
+  }
 }
-
-a,
-a:link,
-a:visited {
-    color: $site-brand-color;
-    text-decoration: none;
-}
-
-a:hover {
-    color: transparentize($site-brand-color, 0.5);
-    text-decoration: none;
-}
-
-a:focus {
-    outline: thin dotted;
-}
-
-
-a.skip-link {
-    color: $site-brand-color;
-    padding: .25em;
-}
-
-a.skip-link:hover,
-a.skip-link:active,
-a.skip-link:focus {
-    background-color: $site-brand-color;
-    color: #fff;
-    border-bottom: none;
-}
-
 
 /*
 Navigation
@@ -278,11 +283,11 @@ Layout
 ==================================
 */
 
-.logo {
+.kdoc__logo {
     display: block;
 }
 
-.content {
+.kdoc__content {
   padding-top: 2em;
   padding-bottom: 2em;
 }
@@ -295,7 +300,7 @@ section:before {
     margin: -60px 0 0;
 }
 
-.wrap {
+.kdoc__wrap {
     max-width: 1200px;
     margin: 0 auto;
     padding-left: 20px;
@@ -316,7 +321,7 @@ Footer
 */
 
 /* for sticky footer */
-.container {
+.kdoc__container {
     display: table;
     height: 100%;
     width: 100%;
@@ -331,7 +336,7 @@ footer {
     font-size: 0.875em;
 }
 
-footer .wrap {
+footer .kdoc__wrap {
   padding-top: 2em;
   padding-bottom: 2em;
 }
@@ -383,7 +388,7 @@ Style
 ==================================
 */
 
-.intro {
+.kdoc__intro {
     color: #75787B;
 }
 
@@ -486,7 +491,7 @@ Desktop Styles
     ==============================
     */
 
-    .logo {
+    .kdoc__logo {
         max-width: 30%;
         padding-right: 20px;
         float: right;
@@ -497,7 +502,7 @@ Desktop Styles
         float: left;
     }
 
-    .main-content {
+    .kdoc__main-content {
         width: 67%;
         float: right;
         margin-bottom: 120px;
@@ -576,7 +581,7 @@ Mobile Styles
 
 @media screen and (max-width: 40.5em) {
 
-    .main-content {
+    .kdoc__main-content {
         margin-top: 1.5em;
     }
 
