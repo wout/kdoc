@@ -155,19 +155,19 @@ Navigation
 ==================================
 */
 
-.sidebar-nav ul {
+.kdoc__sidebar-nav ul {
   margin: 0;
   padding: 0;
   /*border-top: 1px solid @gray-50;*/
 }
-.sidebar-nav li {
+.kdoc__sidebar-nav li {
   list-style: none;
   font-size: 18px;
   border-left: 4px solid transparent;
   overflow:hidden;
 }
 
-.sidebar-nav li > ul li {
+.kdoc__sidebar-nav li > ul li {
   font-size:14px;
   a {
     padding-left:20px;
@@ -175,56 +175,56 @@ Navigation
 }
 
 
-.sidebar-nav a {
+.kdoc__sidebar-nav a {
   display: block;
   padding: 10px;
   -webkit-transition: unset;
   transition: unset;
 }
-.sidebar-nav a,
-.sidebar-nav a:link,
-.sidebar-nav a:visited {
+.kdoc__sidebar-nav a,
+.kdoc__sidebar-nav a:link,
+.kdoc__sidebar-nav a:visited {
   border-bottom: none;
   color: #75787b;
 }
 
-.sidebar-nav li:hover,
-.sidebar-nav a:focus,
-.sidebar-nav li:active,
-.sidebar-nav .sidebar-nav-active {
+.kdoc__sidebar-nav li:hover,
+.kdoc__sidebar-nav a:focus,
+.kdoc__sidebar-nav li:active,
+.kdoc__sidebar-nav .kdoc__sidebar-nav--active {
   color: #75787b;
   border-left: 4px solid $site_brand_color;
   background-color: transparent;
 }
-.sidebar-nav li:hover,
-.sidebar-nav li:active,
-.sidebar-nav .sidebar-nav-active {
+.kdoc__sidebar-nav li:hover,
+.kdoc__sidebar-nav li:active,
+.kdoc__sidebar-nav .kdoc__sidebar-nav--active {
   border-left: 4px solid transparentize($site-brand-color, 0.8);
   li:hover,
-  li.sidebar-nav-active {
+  li.kdoc__sidebar-nav--active {
     border-left:4px solid transparentize($site-brand-color, 0.5);
   }
 }
-.sidebar-nav a:focus {
+.kdoc__sidebar-nav a:focus {
   padding-left: 6px;
 }
-.sidebar-nav li:hover a:focus,
-.sidebar-nav li:active a:focus {
+.kdoc__sidebar-nav li:hover a:focus,
+.kdoc__sidebar-nav li:active a:focus {
   border-left: none;
   padding-left: 10px;
 }
 
-.group:before, .group:after {
+.kdoc__group:before, .group:after {
     content: " ";
     display: table;
 }
 
-.group:after {
+.kdoc__group:after {
     clear: both;
 }
 
 
-.nav-children {
+.kdoc__nav-children {
   display: block;
   max-height: none;
   opacity: 1;
@@ -235,11 +235,11 @@ Navigation
   transition: max-height .2s, opacity .2s
 }
 
-.nav-children[aria-hidden=true] {
+.kdoc__nav-children[aria-hidden=true] {
   max-height:0;
 }
 
-.expand-subnav {
+.kdoc__expand-subnav {
   background: none;
   border: none;
   border-radius: 50%;
@@ -265,13 +265,13 @@ Navigation
   transition: transform .2s
 }
 
-.expand-subnav:hover {
+.kdoc__expand-subnav:hover {
   background-color: $site-brand-color;
   color: #fff;
   outline: none
 }
 
-.expand-subnav[aria-expanded=true] {
+.kdoc__expand-subnav[aria-expanded=true] {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
