@@ -11,7 +11,7 @@
  */
 
 // Setup the base url for your site here
-$url = 'http://nsteiner.github.io/kdoc';
+$url = 'https://natesteiner.com/kdoc';
 
 // Don't touch below here
 define('DS', DIRECTORY_SEPARATOR);
