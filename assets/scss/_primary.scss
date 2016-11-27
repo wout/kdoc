@@ -405,6 +405,17 @@ pre {
     padding: 10px;
 }
 
+.search-form {
+  float:right;
+  margin-top:0.4em;
+  font-size:0.8em;
+  input {
+    background:#eee;
+  }
+}
+
+
+
 /*
 Post list
 ----------------------------------
@@ -579,5 +590,11 @@ Mobile Styles
     .main-content {
         margin-top: 1.5em;
     }
+
+    .search-form {
+      float:none;
+      margin-top:2em;
+    }
+
 
 }

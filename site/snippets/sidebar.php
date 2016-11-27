@@ -33,6 +33,6 @@
 
       </li>
       <?php endforeach ?>
-    </ul>
+    </ul>    
   </nav>
 </aside>
